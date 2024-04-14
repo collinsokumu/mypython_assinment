@@ -1,0 +1,81 @@
+/* Stylesheet for the Car Website */
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    height: 400px;
+  }
+  
+  .hero-content {
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .explore-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  /* Car Category Navigation */
+  .category-nav {
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .category-nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .category-nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  /* Featured Cars Section */
+  .featured-cars {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .car-thumbnail {
+    text-align: center;
+  }
+  
+  .car-thumbnail img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .view-details-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Car Details Page */
+  .car-details {
+    padding: 20px;
+  }
+  
+  .main-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .car-info {
+    margin-top: 20px;
+  }
+  
+  /* Add more styles as needed */
+  

@@ -4,8 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
+  <script src="https:// FORM_SERVICE_SCRIPT_URL "></script>
   <style>
     /* Your CSS styles here */
+    h2 {
+      text-align: center;
+      animation: zoomInOut 2s ease-in-out alternate infinite; /* Animation details */
+    }
+
+    body {
+      background: radial-gradient(#fff);
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
     form {
       max-width: 400px;
       margin: 0 auto;
@@ -22,20 +32,50 @@
       border-radius: 4px;
     }
     button {
-      background-color: #007bff;
+      background-color: #6495ED;
       color: #fff;
-      border: none;
-      border-radius: 4px;
-      padding: 10px 20px;
+      border: 1px solid #6495ED;
+      border-radius: 10px;
+      padding: 20px 20px;
       cursor: pointer;
+      animation: logoAni 1s ease forwards; /* Animation styles */
+      animation-delay: calc(.2s * var(--i));
+      letter-spacing: .10px;
+      font-weight: 600;
     }
     button:hover {
-      background-color: #0056b3;
+      background-color:transparent;
+      color: var(--color-primary);
+    }
+    /* Navigation bar styles */
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #f2f2f2;
+    }
+    .navigation a {
+      text-decoration: none;
+      color: #6495ED;
+      font-weight: bold;
+      animation: zoomInOut 2s ease-in-out alternate infinite;
+    }
+
+    /* Animation styles */
+    @keyframes zoomInOut {
+      20% { transform: scale(1); }
+      70% { transform: scale(1.2); }
+      140% { transform: scale(1); }
     }
   </style>
 </head>
 <body>
-  <h2>Contact Us</h2>
+  <div class="navigation">
+    <a href="magarimotors.html">Home</a>
+    <a href="explore.html">Inventory</a>
+    <a href="contact.html">Contact Us</a> </div>
+
+    <a href="magarimotors.html" class="logo"><h2>Contact Us</h2></a>
   <form id="contact-form">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
@@ -46,38 +86,5 @@
     <button type="submit">Send Message</button>
   </form>
 
-  <script>
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent default form submission
-
-      // Get form data
-      const formData = new FormData(event.target);
-
-      // Send data to backend or handle form submission here
-      // For now, let's just log the data to console
-      console.log('Form data:', formData);
-      
-      // You can add your logic to send the data to backend for processing
-      // For example, using fetch API to send data to a backend endpoint
-      // fetch('/contact', {
-      //   method: 'POST',
-      //   body: formData
-      // })
-      // .then(response => {
-      //   if (response.ok) {
-      //     alert('Message sent successfully!');
-      //     // You can redirect the user to a new page or do other actions here
-      //   } else {
-      //     alert('Failed to send message. Please try again later.');
-      //   }
-      // })
-      // .catch(error => {
-      //   console.error('Error:', error);
-      //   alert('An error occurred. Please try again later.');
-      // });
-    });
-  </script>
-  
 </body>
-<a href="magarimotors.html" style="color: dodgerblue;">back</a>
 </html>

@@ -1,0 +1,182 @@
+body {
+    font-family: Trebuchet MS , Lucida Sans Unicode, Lucida Grande , Lucida Sans , Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  header {
+    background-color: #6495ED; /* Light gray background */
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    animation: zoomInOut 2s ease-in-out alternate infinite;
+  }
+  /* Navigation List (Right Aligned, Hover Effect) */
+header nav {
+    display: flex; /* Arrange items horizontally */
+    justify-content: flex-end; /* Align items to the right */
+    padding: 10px 20px;
+  }
+  
+  header nav ul {
+    list-style: none; /* Remove default bullet points */
+    display: flex; /* Display list items inline */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  header nav ul li {
+    margin: 0 10px; /* Add spacing between list items */
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #333; /* Default text color */
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out; /* Add transition for hover effect */
+  }
+  
+  header nav ul li a:hover {
+    color: whitesmoke; /* Change color on hover (adjust as needed) */
+    /* Optional: Add other hover effects here */
+    /* Example: text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); (subtle text shadow) */
+  }
+  
+  /* Removed the `header nav ul li.active a` selector */
+    
+  main {
+    padding: 50px 0;
+  }
+  
+  main h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .service {
+    width: calc(33% - 40px); /* Adjust width based on desired columns */
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .service:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+    box-shadow: 0px 2px 5px #6495ED(0, 0, 0, 0.2); /* Add a subtle shadow */
+    /* Optional: Add a border on hover */
+    border: 1px solid #ddd;
+  }
+  
+  .service img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .service h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .service p {
+    line-height: 1.5; /* Adjust line spacing for better readability */
+  }
+  
+  .cta {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .cta p {
+    margin-bottom: 20px;
+  }
+  
+  .cta .btn {
+    background-color: #6495ED;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .cta .btn:hover {
+    background-color: #222; /* Darken button on hover */
+  }
+  
+  footer {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  .services {
+    display: flex; /* Arrange services horizontally */
+    flex-wrap: wrap; /* Allow services to wrap on smaller screens */
+    justify-content: space-around; /* Distribute services evenly */
+    gap: 20px; /* Add spacing between services */
+  }
+  
+  .service {
+    width: calc(33% - 40px); /* Adjust width based on desired columns */
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Needed for checkmark positioning */
+  }
+  
+  .service.completed .check {
+    opacity: 1; /* Animate opacity to 1 when completed */
+    animation: checkMarkAppear 0.5s ease-in-out forwards;
+  }
+  
+  .check {
+    font-size: 3em; /* Adjust size as needed */
+    color: green;
+    position: absolute; /* Position checkmark within service */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center checkmark */
+    opacity: 0; /* Initially hidden */
+  }
+  
+  @keyframes checkMarkAppear {
+    from { opacity: 0; transform: scale(0); } /* Start small and hidden */
+    to { opacity: 1; transform: scale(1); } /* Animate to full size and opacity */
+  }
+  header {
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+@keyframes zoomInOut {
+    20% { transform: scale(1); }
+    70% { transform: scale(1.2); }
+    140% { transform: scale(1); }
+}

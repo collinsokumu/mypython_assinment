@@ -2,155 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAGARI AND PROPERTIES KE</title>
-    <style>
-        /* Add your CSS styles here */
-        /* For demonstration purposes, some basic styles are added inline */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo img {
-            height: 100px;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background-color: #f4f4f4;
-        }
-        .hero h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-        .feature {
-            text-align: center;
-        }
-        .feature img {
-            max-width: 100%;
-            height: auto;
-        }
-        .cta {
-            text-align: center;
-            padding: 50px 20px;
-            background-color: #ccc;
-        }
-        .cta .btn {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .testimonials {
-            text-align: center;
-            padding: 50px 20px;
-            background-color: #f4f4f4;
-        }
-        .testimonials .testimonial {
-            margin-bottom: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        footer .contact-info, footer .social-links {
-            margin-bottom: 10px;
-        }
-        footer .social-links a {
-            color: #fff;
-            margin: 0 5px;
-        }
-    </style>
-</head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <title>Magari and properties Website</title>
+    <!-- ..................Custom Css Link................... -->
+    <link rel="stylesheet" href="./style.css">
+</head>  
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Company Logo">
-        </div>
+        <!-- ..................Start Navbar................... -->
         <nav>
-            <ul>
-                <li><a href="magarimotors.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="container nav-container">
+
+                <ul class="nav-link">
+                    <li><a href="magarimotors.html" style="--i:1;" class="active">Home</a></li>
+                    <li><a href="about.html" style="--i:2;">About Us</a></li>
+                    <li><a href="services.html" style="--i:3;">Services</a></li>
+                    <li><a href="explore.html" style="--i:4;">Inventory</a></li>
+                    <li><a href="contact.html" style="--i:5;">Contact</a></li>
+                </ul>
+                <ul class="social-link">
+                    <li><a href="" style="--i:1;"><img src="video.png" alt="Custom Icon" style="width: 24px; height: 24px;"></a></li>
+                    <li><a href="" style="--i:1;"><img src="instagram (1).png" alt="Custom Icon" style="width: 24px; height: 24px;"></a></li>
+                    <li><a href="" style="--i:1;"><img src="whatsapp.png" alt="Custom Icon" style="width: 24px; height: 24px;"></a></li>
+                    <li><a href="" style="--i:1;"><img src="email.png" alt="Custom Icon" style="width: 24px; height: 24px;"></a></li>
+
+
+                </ul>
+            </div>
         </nav>
-    </header>
-    <section class="hero">
-        <img src="hero-image.jpg" alt="Hero Image">
-        <h1>MAGARI AND PROPERTIES KE</h1>
-        <p>Dealers in Motor vehicles and exemplary properties in Kenya.</p>
-    </section>
-    <section class="features">
-        <div class="feature">
-            <img src="feature1.jpg" alt="Feature 1">
-            <h2>Prado TX </h2>
-            <p>A true all-rounder, the Land Cruiser Prado provides the styling and comfort you expect from a top of the range vehicle, whilst also answering the demands of the toughest off-road terrains. Many organisations find this model to be the perfect combination for urban usage and off-road leadership.
+        <!-- ..................End Navbar................... -->
 
-                It delivers an impeccable balance of power and efficiency.</p>
-        </div>
-        <div class="feature">
-            <img src="feature2.jpg" alt="Feature 2">
-            <h2>Land Cruiser</h2>
-            <p>Legendary is a much overused word but, in the case of the Land Cruiser 70 series, it is completely justified. 30 years on from its debut, the Land Cruiser 70 series can still claim to be the most rugged, most reliable vehicle for handling the harshest conditions and toughest situations which life can throw at it.
 
-                It is the standard fleet vehicle for many front-line agencies who demand the ultimate in dependability. Customers can trust this model to deliver unprecedented performance..</p>
-        </div>
-        <!-- Add more features as needed -->
-    </section>
-    <section class="cta">
-        <h2>Ready to get started?</h2>
-        <a href="signup.html" class="btn">Sign Up Now</a>
-    </section>
-    <section class="testimonials">
-        <div class="testimonial">
-            <p>"Great services! Changed my expectations!"</p>
-            <cite>John Okumu</cite>
-        </div>
-        <div class="testimonial">
-            <p>"Highly recommended. Excellent service!"</p>
-            <cite>Jane Maleba</cite>
-        </div>
-        <!-- Add more testimonials as needed -->
-    </section>
-    <footer>
-        <div class="contact-info">
-            <p>Contact us: magarimotorsandproperties@gmail.com</p>
-            <p>Phone: +254 717 293439</p>
-        </div>
-        <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=100063849168211">Facebook</a> 
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
-    </footer>
+        <!-- ..................Start Header Section................... -->
+        <header>
+            <div class="container header-container">
+                <div class="header-left">
+                    <h1>The best quality cars and properties.</h1>
+                    <h3>Listen!</h3>
+                    <p>
+                        "Discover the essence of elegance with our Exemplary Cars and Properties! Immerse yourself in a world where luxury meets comfort, where each listing tells a unique story of style and sophistication. <br>Explore our curated collection today and find your perfect match in just a click!"
+                    </p>
+                    <a href="explore.html" class="btn">Explore Cars</a>
+                    <a href="tel:+254717293439" class="btn">Call Us: +254717293439</a>
+                </div>
+                <div class="header-right">
+                    <div class="sq-box">
+                        <img src="./prado1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sq-box2"></div>
+        </header>
+        <!-- ..................End Header Section................... -->
 </body>
-<a href="magarimotors.html" style="color: dodgerblue;">back</a>
 </html>

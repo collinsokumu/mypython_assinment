@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Routes
-app.post('/signup.html', (req, res) => {
+app.post('/contact.html', (req, res) => {
   const { email, password } = req.body;
 
   // Here you would typically handle the sign-up process

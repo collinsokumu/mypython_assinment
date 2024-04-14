@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coordinated Navigation Menu</title>
-    <style>
-        /* CSS styles for navigation menu */
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magari and properties</title>
+  <link rel="stylesheet" href="style3.css">
 </head>
 <body>
+  <header>
+    <h1>We Offer Comprehensive Car Services</h1>
     <nav>
-        <ul>
-            <li><a href="magarimotors.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="magarimotors.html">Home</a></li>
+        <li class="active"><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Your website content goes here -->
-     
+  <main>
+    <h2>Magari and Properties- Services</h2>
+    <section class="services">
+      <article class="service">
+        <img src="maintain.webp" alt="Car maintenance icon">
+        <h3>Routine Maintenance</h3>
+        <p>We provide all essential maintenance services to keep your car running smoothly, including oil changes, tire rotations, and filter replacements.</p>
+      </article>
+      <article class="service">
+        <img src="repair.jpg" alt="Car repair icon">
+        <h3>Expert Repairs</h3>
+        <p>Our experienced technicians can diagnose and repair any car problem, using high-quality parts and ensuring your vehicle's safety and performance.</p>
+      </article>
+      <article class="service">
+        <img src="parts.jpg" alt="Car parts icon">
+        <h3>Genuine Parts</h3>
+        <p>We use only genuine manufacturer parts or high-quality aftermarket parts to ensure your car remains reliable and maintains its value.</p>
+      </article>
+      <article class="service">
+        <img src="waranty.jpg" alt="Car warranty icon">
+        <h3>Warranty Work</h3>
+        <p>We're happy to handle warranty repairs for your car. Bring your vehicle and warranty documentation, and we'll take care of the rest.</p>
+      </article>
+    </section>
+
+    <section class="cta">
+      <h2>Schedule Your Service Today!</h2>
+      <p>Call us at +254717293439 or fill out our online service request form to schedule your appointment.</p>
+      <a href="contact.html" class="btn">Schedule Service</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Magari and Properties. All rights reserved.</p>
+  </footer>
 
 </body>
-<a href="magarimotors.html" style="color: dodgerblue;">back</a>
+<script src="script3.js"></script>
+
 </html>
